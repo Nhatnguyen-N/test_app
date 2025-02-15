@@ -12,7 +12,6 @@ const CustomButton = ({ ...props }: ButtonProps) => {
           backgroundColor: "#FF9c01",
           borderRadius: 12,
           minHeight: 42,
-          width: "50%",
           justifyContent: "center",
           alignItems: "center",
         },

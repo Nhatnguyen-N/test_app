@@ -19,3 +19,25 @@ export const travel = [
   },
 
 ]
+
+export const travelEN = [
+  {
+    _id: 1,
+    imageUrl: "https://res.cloudinary.com/dsq3oy0yz/image/upload/v1739511494/new3_vnwkju.jpg",
+    title: "Travel New1",
+    description: "The sea has always been one of the most attractive destinations for travelers around the world. With soft white sand, crystal-clear water, and refreshing breezes, the beach not only offers relaxation but also allows visitors to immerse themselves in pristine nature. One of the most wonderful experiences when traveling to the beach is enjoying the sunrise or sunset on the shore. The sight of the sun slowly rising or setting on the horizon, painting the sky with a vibrant orange hue, creates a dreamy and peaceful landscape.Besides its breathtaking scenery, the sea offers a variety of exciting activities such as swimming, snorkeling, kayaking, and surfing, bringing a sense of thrill and energy. The beach is also a paradise for food lovers, with a wide range of fresh seafood delicacies like lobster, crab, grilled squid, and herring salad. Each coastal region has its own specialties, offering visitors unique culinary experiences.Moreover, a beach getaway helps to refresh the mind, reduce stress, and bring moments of pure relaxation. Whether it’s a trip with family, friends, or a solo adventure, the beach is always the perfect choice to recharge and enjoy life. Take the time to explore stunning beaches, soak in the fresh air, and capture unforgettable memories! 🌊🌞"
+  },
+  {
+    _id: 2,
+    imageUrl: "https://res.cloudinary.com/dsq3oy0yz/image/upload/v1739511494/new2_xijl81.jpg",
+    title: "Travel New 2",
+    description: "The sea has always been one of the most attractive destinations for travelers around the world. With soft white sand, crystal-clear water, and refreshing breezes, the beach not only offers relaxation but also allows visitors to immerse themselves in pristine nature. One of the most wonderful experiences when traveling to the beach is enjoying the sunrise or sunset on the shore. The sight of the sun slowly rising or setting on the horizon, painting the sky with a vibrant orange hue, creates a dreamy and peaceful landscape.Besides its breathtaking scenery, the sea offers a variety of exciting activities such as swimming, snorkeling, kayaking, and surfing, bringing a sense of thrill and energy. The beach is also a paradise for food lovers, with a wide range of fresh seafood delicacies like lobster, crab, grilled squid, and herring salad. Each coastal region has its own specialties, offering visitors unique culinary experiences.Moreover, a beach getaway helps to refresh the mind, reduce stress, and bring moments of pure relaxation. Whether it’s a trip with family, friends, or a solo adventure, the beach is always the perfect choice to recharge and enjoy life. Take the time to explore stunning beaches, soak in the fresh air, and capture unforgettable memories! 🌊🌞"
+  },
+  {
+    _id: 3,
+    imageUrl: "https://res.cloudinary.com/dsq3oy0yz/image/upload/v1739511494/new1_m6jbnd.jpg",
+    title: "Travel New 2",
+    description: "The sea has always been one of the most attractive destinations for travelers around the world. With soft white sand, crystal-clear water, and refreshing breezes, the beach not only offers relaxation but also allows visitors to immerse themselves in pristine nature. One of the most wonderful experiences when traveling to the beach is enjoying the sunrise or sunset on the shore. The sight of the sun slowly rising or setting on the horizon, painting the sky with a vibrant orange hue, creates a dreamy and peaceful landscape.Besides its breathtaking scenery, the sea offers a variety of exciting activities such as swimming, snorkeling, kayaking, and surfing, bringing a sense of thrill and energy. The beach is also a paradise for food lovers, with a wide range of fresh seafood delicacies like lobster, crab, grilled squid, and herring salad. Each coastal region has its own specialties, offering visitors unique culinary experiences.Moreover, a beach getaway helps to refresh the mind, reduce stress, and bring moments of pure relaxation. Whether it’s a trip with family, friends, or a solo adventure, the beach is always the perfect choice to recharge and enjoy life. Take the time to explore stunning beaches, soak in the fresh air, and capture unforgettable memories! 🌊🌞"
+  },
+
+]

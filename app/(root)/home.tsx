@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import Header from "@/components/header";
 import { BlurView } from "@react-native-community/blur";
-import { travel } from "@/Data/TravelData";
+import { travel, travelEN } from "@/Data/TravelData";
 import TravelCard from "@/components/travelCard";
 import InputField from "@/components/inputField";
 import CustomButton from "@/components/customButton";
@@ -28,7 +28,7 @@ type Props = {};
 
 const Home = (props: Props) => {
   const dispatch = useDispatch();
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
   const HandleSetTravel = (item: travelItemParams) => {
     dispatch(setTravel(item));
     router.push(`/(root)/about`);
@@ -42,7 +42,7 @@ const Home = (props: Props) => {
       <StatusBar hidden={false} backgroundColor={"#ffff"} />
       <SafeAreaView style={{ flex: 1 }}>
         <FlatList
-          data={travel}
+          data={i18n.language === "vi" ? travel : travelEN}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
             <TravelCard
@@ -72,10 +72,7 @@ const Home = (props: Props) => {
                       lineHeight: 28,
                     }}
                   >
-                    Travel Test là ứng dụng giúp bạn khám phá thế giới dễ dàng
-                    và thuận tiện hơn bao giờ hết. Với giao diện trực quan, bạn
-                    có thể tìm kiếm địa điểm du lịch, đặt vé, xem đánh giá và
-                    lập kế hoạch hành trình chỉ trong vài thao tác.
+                    {t("IntroduceApp")}
                   </Text>
 
                   <CustomButton
@@ -108,12 +105,15 @@ const Home = (props: Props) => {
                   justifyContent: "center",
                 }}
               >
-                <InputField label="Họ và Tên" labelStyle={{ color: "white" }} />
+                <InputField label={t("Name")} labelStyle={{ color: "white" }} />
                 <InputField label="Email" labelStyle={{ color: "white" }} />
-                <InputField label="Nội dung" labelStyle={{ color: "white" }} />
+                <InputField
+                  label={t("Content")}
+                  labelStyle={{ color: "white" }}
+                />
 
                 <CustomButton
-                  title={"Gửi"}
+                  title={t("Send")}
                   handlePress={() => {}}
                   containerStyles={{
                     margin: 15,

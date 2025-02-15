@@ -1,5 +1,6 @@
 import { View, Text, Image, TouchableOpacity, Pressable } from "react-native";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 interface TravelProps {
   imageUrl: string;
@@ -9,6 +10,7 @@ interface TravelProps {
 }
 
 const TravelCard = (props: TravelProps) => {
+  const { t } = useTranslation("home");
   return (
     <View style={{}}>
       <Pressable
@@ -51,7 +53,9 @@ const TravelCard = (props: TravelProps) => {
               {props.title}
             </Text>
             <TouchableOpacity>
-              <Text style={{ color: "red", fontWeight: "bold" }}>Đọc thêm</Text>
+              <Text style={{ color: "red", fontWeight: "bold" }}>
+                {t("More")}
+              </Text>
             </TouchableOpacity>
           </View>
           <Text

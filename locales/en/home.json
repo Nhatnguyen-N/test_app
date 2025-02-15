@@ -1,4 +1,13 @@
 {
   "Explore": "Explore",
-  "Recent": "Recent"
+  "Recent": "Recent",
+  "More": "More",
+  "Send": "Send",
+  "Name": "Name",
+  "Email": "Email",
+  "Content": "Content",
+  "Contact": "Contact Information",
+  "AddressContact": "12 Nguyen Van Bao, Ward 4, Go Vap District, Ho Chi Minh City ",
+  "PrivacyPolicy": "Privacy policy",
+  "IntroduceApp": "Travel Test is an application that helps you explore the world easily and more conveniently than ever. With an intuitive interface, you can search for travel destinations, book tickets, view reviews, and plan your journey in just a few simple steps."
 }

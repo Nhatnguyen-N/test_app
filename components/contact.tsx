@@ -1,9 +1,11 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { t } = useTranslation("home");
   return (
     <View
       style={{
@@ -12,16 +14,18 @@ const Contact = (props: Props) => {
     >
       <View>
         <Text style={{ fontSize: 24, fontWeight: "bold", color: "white" }}>
-          Thông tin liên hệ
+          {t("Contact")}
         </Text>
         <Text style={{ fontSize: 15, color: "white" }}>
           nhatnguyen13213@gmail.com
         </Text>
         <Text style={{ fontSize: 15, color: "white" }}>+84 376 326 727</Text>
         <Text style={{ fontSize: 15, color: "white" }}>
-          12 Nguyễn Văn Bảo phường 4 quận Gò Vấp TP Hồ Chí Minh
+          {t("AddressContact")}
         </Text>
-        <Text style={{ fontSize: 15, color: "white" }}>Chính Sách Bảo Mật</Text>
+        <Text style={{ fontSize: 15, color: "white" }}>
+          {t("PrivacyPolicy")}
+        </Text>
       </View>
       <View style={{ flexDirection: "row", marginVertical: 8 }}>
         <View
