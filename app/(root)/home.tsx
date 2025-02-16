@@ -8,6 +8,7 @@ import {
   StyleSheet,
   KeyboardAvoidingView,
   StatusBar,
+  Platform,
 } from "react-native";
 import React, { useState } from "react";
 import Header from "@/components/header";
@@ -40,10 +41,16 @@ const Home = (props: Props) => {
       style={{ flex: 1 }}
     >
       <StatusBar hidden={false} backgroundColor={"#ffff"} />
-      <SafeAreaView style={{ flex: 1 }}>
+      <View
+        style={[
+          Platform.OS === "ios" ? { paddingTop: 24 } : { paddingTop: 0 },
+          { flex: 1 },
+        ]}
+      >
         <FlatList
           data={i18n.language === "vi" ? travel : travelEN}
           showsVerticalScrollIndicator={false}
+          style={{ flex: 1 }}
           renderItem={({ item }) => (
             <TravelCard
               handlePress={() => HandleSetTravel(item)}
@@ -126,7 +133,8 @@ const Home = (props: Props) => {
             </>
           )}
         />
-      </SafeAreaView>
+      </View>
+      {/* <Text style={{ color: "White", fontSize: 35 }}>abc</Text> */}
     </ImageBackground>
   );
 };

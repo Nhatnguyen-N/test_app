@@ -39,10 +39,12 @@ const Header = () => {
           flexDirection: "row",
           borderWidth: 2,
           borderRadius: 50,
-          padding: 10,
           alignItems: "center",
           borderColor: "#FF9c01",
           height: 50,
+          width: 100,
+          justifyContent: "space-between",
+          padding: 5,
         }}
       >
         <Pressable
@@ -50,23 +52,58 @@ const Header = () => {
             currentLng === "vi"
               ? {
                   backgroundColor: "#FF9c01",
-                  height: "100%",
-                  borderRadius: 9999,
+                  // height: 50,
+                  // width: "45%",
+                  padding: 10,
+                  borderRadius: 50,
+                  justifyContent: "center",
+                  alignItems: "center",
                 }
-              : {}
+              : {
+                  padding: 10,
+                  borderRadius: 9999,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }
           }
           onPress={() => changeLanguage("vi")}
         >
-          <Text style={{ color: "#FF9c01", fontSize: 18, fontWeight: "500" }}>
+          <Text
+            style={
+              currentLng == "vi"
+                ? { color: "#000", fontSize: 18, fontWeight: "500" }
+                : { color: "#FF9c01", fontSize: 18, fontWeight: "500" }
+            }
+          >
             VN
           </Text>
         </Pressable>
-        <Text style={{ color: "#FF9c01", marginHorizontal: 5 }}>|</Text>
         <Pressable
-          style={currentLng === "en" ? { backgroundColor: "#FF9c01" } : {}}
+          style={
+            currentLng === "en"
+              ? {
+                  backgroundColor: "#FF9c01",
+                  padding: 10,
+                  borderRadius: 50,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }
+              : {
+                  padding: 10,
+                  borderRadius: 9999,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }
+          }
           onPress={() => changeLanguage("en")}
         >
-          <Text style={{ color: "#FF9c01", fontSize: 18, fontWeight: "500" }}>
+          <Text
+            style={
+              currentLng == "en"
+                ? { color: "#000", fontSize: 18, fontWeight: "500" }
+                : { color: "#FF9c01", fontSize: 18, fontWeight: "500" }
+            }
+          >
             EN
           </Text>
         </Pressable>
