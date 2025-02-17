@@ -1,9 +1,10 @@
 import { View, Text, Image, TouchableOpacity, Pressable } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { ImageProp } from "@/types/type";
 
 interface TravelProps {
-  imageUrl: string;
+  images: ImageProp[];
   title: string;
   description: string;
   handlePress: () => void;
@@ -11,6 +12,8 @@ interface TravelProps {
 
 const TravelCard = (props: TravelProps) => {
   const { t } = useTranslation("home");
+  const imageUrl = props.images.map((e) => e.imageUrl);
+
   return (
     <View style={{}}>
       <Pressable
@@ -26,7 +29,7 @@ const TravelCard = (props: TravelProps) => {
       >
         <View style={{ alignItems: "center" }}>
           <Image
-            source={{ uri: props.imageUrl }}
+            source={{ uri: imageUrl[0] }}
             resizeMode="cover"
             style={{
               width: "100%",

@@ -20,10 +20,14 @@ declare interface ButtonProps extends ButtonProps {
 }
 export interface travelItemParams {
   _id: number;
-  imageUrl: string;
+  images: ImageProp[];
   title: string;
   description: string;
 }
 export interface TravelItem {
   travel: travelItemParams[]
+}
+export interface ImageProp {
+  id: number;
+  imageUrl: string
 }

@@ -56,7 +56,7 @@ const Home = (props: Props) => {
               handlePress={() => HandleSetTravel(item)}
               description={item.description}
               title={item.title}
-              imageUrl={item.imageUrl}
+              images={item.images}
             />
           )}
           ListHeaderComponent={() => (
